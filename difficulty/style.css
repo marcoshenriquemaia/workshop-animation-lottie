@@ -1,0 +1,76 @@
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+.container{
+  width: 50%;
+  height: 70%;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em 0;
+  overflow: hidden;
+}
+
+.avatar{
+  width: 100px;
+  border-radius: 100em;
+  animation: avatarIn 200ms;
+}
+
+.name{
+  font-size: 3em;
+}
+
+.image-name-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.difficulty-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 50%;
+  justify-content: space-evenly;
+}
+
+.mentor{
+  display: flex;
+  flex-direction: column;
+}
+
+.mentor-button, .next{
+  margin-bottom: 2em;
+  border: 1px solid black;
+  background-color: transparent;
+  cursor: pointer;
+  height: 2em;
+  outline: none;
+  border-radius: 5px;
+}
+
+.difficulty-text{
+  animation: difficultyIn 500ms backwards;
+}
+
+@keyframes difficultyIn {
+  from{
+    transform: translateX(-100%);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+
+@keyframes avatarIn{
+  from{
+    transform: scale(.2);
+  }
+  to{
+    transform: scale(1);
+  }
+}

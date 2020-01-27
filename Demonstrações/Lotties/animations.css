@@ -1,0 +1,69 @@
+.minicart-container{
+  animation-name: minicartContainerIn;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+  animation-delay: 500ms;
+  animation-timing-function: cubic-bezier(.37,.02,.71,1.4);
+  transform: translateX(100%);
+}
+
+.minicart-container-products{
+  overflow-x: hidden;
+}
+
+.minicart-product{
+  animation: minicartProductIn 400ms 500ms backwards;
+} 
+
+.minicart-container-close{
+  animation: minicartContainerOut 300ms forwards cubic-bezier(.56,-0.56,.7,.95);
+}
+
+.minicart-product-close{
+  animation: minicartProductOut 400ms cubic-bezier(.56,-0.56,.7,.95);
+}
+
+.minicart-button-buy{
+  transition-duration: 500ms;
+}
+
+.button-clicked{
+  width: 40px;
+  height: 40px;
+}
+
+@keyframes minicartProductIn{
+  from{
+    transform: translateX(100%);
+  } 
+  to{
+    transform: translateX(0);
+  }
+}
+
+@keyframes minicartProductOut{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(100%);
+  }
+}
+
+@keyframes minicartContainerOut{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(100%);
+  }
+}
+
+@keyframes minicartContainerIn {
+  from{
+    transform: translateX(100%);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
