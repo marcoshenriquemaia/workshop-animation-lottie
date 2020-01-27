@@ -42,8 +42,11 @@ body{
 
 .letter{
   animation: letterIn 250ms;
-  width: 1em;
+  min-width: .5em;
   height: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition-duration: 50ms;
 }
 
